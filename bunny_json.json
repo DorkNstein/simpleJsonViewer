@@ -1,0 +1,116 @@
+{
+  "Inference_test": [
+    {
+      "RAN_ON": "MLG_051",
+      "JOB_URL": "https://mlg-qipl-stagae-ci.qcom.com/job/Inference_test/169/",
+      "BUILD_NUM": "169",
+      "SubBuilds": null,
+      "Parameters": {
+        "SOC": "845",
+        "ZSNPE_ROOT": "/prj/qct/webetch_hyd/projects/dsp",
+        "ANDROID_HOME": "/prj/qct/android",
+        "EMAIL": "true",
+        "file": "/prj/qct/tech/file.txt"
+      }
+    },
+    {
+      "RAN_ON": "MLG_051",
+      "JOB_URL": "https://mlg-qipl-stagae-ci.qcom.com/job/Inference_test/170/",
+      "BUILD_NUM": "170",
+      "SubBuilds": null,
+      "Parameters": {
+        "SOC": "8150",
+        "ZSNPE_ROOT": "/prj/qct/webetch_hyd/projects/dsp",
+        "ANDROID_HOME": "/prj/qct/android",
+        "EMAIL": "true",
+        "file": "/prj/qct/tech/file1.txt"
+      }
+    },
+    {
+      "RAN_ON": "MLG_051",
+      "JOB_URL": "https://mlg-qipl-stagae-ci.qcom.com/job/Inference_test/171/",
+      "BUILD_NUM": "171",
+      "SubBuilds": null,
+      "Parameters": {
+        "SOC": "8996",
+        "ZSNPE_ROOT": "/prj/qct/webetch_hyd/projects/dsp",
+        "ANDROID_HOME": "/prj/qct/android",
+        "EMAIL": "true",
+        "file": "/prj/qct/tech/file2.txt"
+      }
+    }
+  ],
+  "SNPE_SUITE": [
+    {
+      "RAN_ON": "MLG_052",
+      "JOB_URL": "https://mlg-qipl-stage-ci.qcom.com/job/SNPE_SUITE/23/",
+      "BUILD_NUM": "23",
+      "Subbuilds": [
+        {
+          "jobName": "SNPE_v60",
+          "build_number": "49",
+          "Result": "success"
+        },
+        {
+          "jobName": "SNPE_v65",
+          "build_number": "53",
+          "Result": "success"
+        },
+        {
+          "jobName": "SNPE_v66",
+          "build_number": "62",
+          "Result": "success"
+        }
+      ],
+      "Parameters": {
+        "SNPE_ROOT": "/prj/qct/SNPE",
+        "DLC": "true",
+        "clean_build": "false",
+        "branch": "master"
+      }
+    }
+  ],
+  "SNPE_v66": [
+    {
+      "RAN_ON": "MLG_052",
+      "JOB_URL": "https://mlg-qipl-stage-ci.qcom.com/job/SNPE_v66/23",
+      "Build_number": "23",
+      "Subbuilds": [
+        {
+          "Jobname": "Map on v66",
+          "build_number": "34",
+          "Result": "Success"
+        },
+        {
+          "Jobname": "Bench on v66",
+          "build_number": "45",
+          "Result": "Success"
+        },
+        {
+          "Jobname": "Inference on v66",
+          "build_number": "76",
+          "Result": "Success"
+        }
+      ],
+      "Parameters":{
+        "DIR": "/prj/qct/hyd/master",
+        "yaml_file": "nightly_v66",
+        "soc": "8150"
+      }
+    }
+  ],
+  "Map on v66": [
+    {
+      "RAN_ON": "MLG_091",
+      "JOB_URL": "https://mlg-qipl-stage-ci.qcom.com/job/Maponv66/23",
+      "Build_num": "98",
+      "SUbbuilds": null,
+      "Parameters": {
+        "DEVICE_ID": "87jhgfkd",
+        "path_to_mount": "/dev/block",
+        "image_size": "5k",
+        "SOC": "8150"
+      }
+    }
+  ]
+}
